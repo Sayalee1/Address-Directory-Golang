@@ -3,7 +3,8 @@ The location service has the following REST endpoints to store and retrieve loca
 
 Create New Location - POST        /locations
 Request:
-POST /locations
+
+1. POST /locations
 {
    "name" : "Sayalee Agashe",
    "address" : "123 Main St",
@@ -25,7 +26,8 @@ HTTP Response Code: 201
      "lng" : -222.0841244
    }
 }
-Get a Location - GET        /locations/{location_id}
+
+2. Get a Location - GET        /locations/{location_id}
 Request
 GET /locations/12345
 Response
@@ -42,7 +44,8 @@ HTTP Response Code: 200
      "lng" : -222.0841244
    }
 }
-Update a Location - PUT /locations/{location_id}
+
+3. Update a Location - PUT /locations/{location_id}
 Request:
 PUT /locations/12345
 {
@@ -65,7 +68,8 @@ HTTP Response Code: 201
      "lng" : -122.0841244
    }
 }
-Delete a Location - DELETE /locations/{location_id}
+
+4. Delete a Location - DELETE /locations/{location_id}
         Request:
 DELETE  /locations/12345
         Response:
